@@ -1,0 +1,16 @@
+#theParent {
+    display: flex;
+    justify-content: center;
+}
+
+.child {
+    width: 40px;
+    height: 50px;
+    background-color: aqua;
+    border: solid 1px;
+    box-shadow: 5px 6px;
+}
+
+.secondInList {
+    flex-grow: 2;
+}
