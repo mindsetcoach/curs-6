@@ -1,3 +1,19 @@
 h1 {
     color: blue;
 }
+
+div.specialText {
+    color: green;
+}
+
+span {
+    font-size: smaller;
+}
+
+p > span {
+    background-color: lightsalmon;
+}
+
+span {
+    background-color: red;
+}
