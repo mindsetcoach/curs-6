@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="3rd-party/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
-        <script defer src="misc/events.js"></script>
         <title>Page 1</title>
     </head>
     <body>
 
         <h1 id="theHeader">Page 1</h1>
 
-        <a href="index.html">Page 1</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page">Page 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">Page 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page3.html">Page 3</a>
+            </li>
+        </ul>
 
     </body>
 </html>
