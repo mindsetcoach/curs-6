@@ -18,16 +18,34 @@ span {
     background-color: red;
 }
 
-/* a {
-    padding: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
+.header {
+    height: 220px;
+    background-color: beige;
 }
 
-a, a:visited, a:hover, a:active {
-    color: inherit;
+.menu {
+    padding: 10px 0 10px 0;
 }
 
-a.currentPage {
-    color: grey;
-} */
+.tiledContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentTile {
+    width: 250px;
+    height: 150px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.popup {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background-color: lightpink;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}

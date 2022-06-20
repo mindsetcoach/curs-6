@@ -1,0 +1,9 @@
+.companyInfo {
+    height: 250px;
+    background-color: lightgreen;
+}
+
+.companyMap {
+    height: 200px;
+    background-color: lightcoral;
+}

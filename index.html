@@ -3,25 +3,31 @@
     <head>
         <link rel="stylesheet" href="3rd-party/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="index/page.css">
+
         <script src="3rd-party/axios.min.js"></script>
         <script src="main.js"></script>
+
         <title>Page 1</title>
     </head>
     <body>
-
-        <h1 id="theHeader">Page 1</h1>
-
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page">Index</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="launches.html">Launches</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="crew.html">Crew</a>
-            </li>
-        </ul>
-
+        <div class="header"></div>
+        <div class="menu">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Index</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="launches.html">Launches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="crew.html">Crew</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="companyInfo"></div>
+            <div class="companyMap"></div>
+        </div>
     </body>
 </html>
