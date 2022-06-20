@@ -22,11 +22,11 @@
 .popup {
     display: none;
     position: fixed;
-    height: 400px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: lightpink;
-    top: 50%;
-    left: 50%;
-    margin-top: -200px;
 }
 
 .popupHeader {
@@ -34,17 +34,25 @@
     flex-direction: row-reverse;
     padding: 0 8px 0 8px;
 }
-
 .popupHeader > span {
     cursor: pointer;
 }
 
-.medium {
-    width: 600px;
-    margin-left: -300px;
-}
-
-.small {
-    width: 400px;
-    margin-left: -200px;
+@media only screen and (min-width: 600px) {
+    .popup {
+        height: 400px;
+        top: 50%;
+        left: 50%;
+        bottom: 50%;
+        right: 50%;
+        margin-top: -200px;
+    }
+    .small {
+        width: 400px;
+        margin-left: -200px;
+    }
+    .medium {
+        width: 600px;
+        margin-left: -300px;
+    }
 }
