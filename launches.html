@@ -26,12 +26,52 @@
             </ul>
         </div>
         <div class="content tiledContent">
-            <div class="contentTile"></div>
-            <div class="contentTile"></div>
-            <div class="contentTile"></div>
+            <div class="contentTile" data-modal-name="firstModal"></div>
+            <div class="contentTile" data-modal-name="secondModal"></div>
+            <div class="contentTile" data-modal-name="thirdModal"></div>
         </div>
-        <div class="popup medium">
-            <div class="popupHeader"><span>x</span></div>
+        <div class="modal firstModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">First modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal secondModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Second modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal thirdModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Third modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

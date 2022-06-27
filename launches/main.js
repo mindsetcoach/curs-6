@@ -7,26 +7,29 @@ let launches = {
             .catch(launches.onAxiosError)
         ;
 
-        let popupCloseButton = document.querySelector('.popupHeader > span');
-        popupCloseButton.addEventListener('click', launches.onPopupClose);
+        let popupCloseButtons = document.querySelectorAll('.btn-close');
+        for (let i = 0; i < popupCloseButtons.length; i++) {
+            popupCloseButtons[i].addEventListener('click', launches.onPopupClose);
+        }
 
         let tiles = document.querySelectorAll('.contentTile');
         for (let i = 0; i < tiles.length; i++) {
-
-            let theTile = tiles[i];
-            theTile.addEventListener('click', launches.onTileClick);
+            tiles[i].addEventListener('click', launches.onTileClick);
         }
     },
 
     onPopupClose: function() {
         // let's hide the popup
-        let popup = document.querySelector('.popup');
-        popup.style.display = 'none';
+        let popups = document.querySelectorAll('.modal');
+        for (let i = 0; i < popups.length; i++) {
+            popups[i].style.display = 'none';
+        }
     },
     
-    onTileClick: function() {
+    onTileClick: function(event) {
         // let's show the popup
-        let popup = document.querySelector('.popup');
+        let modalName = event.currentTarget.dataset.modalName;
+        let popup = document.querySelector('.' + modalName);
         popup.style.display = 'block';
     },
 
@@ -34,18 +37,9 @@ let launches = {
         alert('the no of launches was pressed');
     },
 
-    fillPopupValue: function(launchData) {
-        let myPopup = document.querySelector('.popup');
-        let newDiv = document.createElement('div');
-        newDiv.innerHTML = launchData.length;
-        newDiv.addEventListener('click', launches.onNoOfLaunchesPressed);
-    
-        myPopup.appendChild(newDiv);
-    },
-
     onAxiosFinished: function(response) {
         let launchData = response.data;
-        launches.fillPopupValue(launchData);
+        // TODO stuff here
     },
 
     onAxiosError: function(error) {
