@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="main.css">
 
         <script defer src="3rd-party/axios.min.js"></script>
-        <script defer src="main.js"></script>
+        <script defer src="utils/main.js"></script>
+        <script defer src="utils/popupHandling.js"></script>
         <script defer src="crew/main.js"></script>
 
         <title>Hello World!</title>
@@ -26,13 +27,62 @@
             </ul>
         </div>
         <div class="content tiledContent">
-            <div class="contentTile"></div>
-            <div class="contentTile"></div>
-            <div class="contentTile"></div>
-            <div class="contentTile"></div>
+            <div class="contentTile" data-modal-name="firstModal"></div>
+            <div class="contentTile" data-modal-name="secondModal"></div>
+            <div class="contentTile" data-modal-name="thirdModal"></div>
+            <div class="contentTile" data-modal-name="fourthModal"></div>
         </div>
-        <div class="popup small">
-            <div class="popupHeader"><span>x</span></div>
+        <div class="modal firstModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal secondModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal thirdModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fourthModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
