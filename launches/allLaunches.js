@@ -8,7 +8,8 @@ launches.renderTable = function() {
 
         let row = document.createElement('tr');
 
-        let flightNo = document.createElement('td');
+        let flightNo = document.createElement('th');
+        flightNo.setAttribute('scope', 'row');
         let name = document.createElement('td');
         let date = document.createElement('td');
         let noOfCores = document.createElement('td');
