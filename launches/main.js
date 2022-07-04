@@ -1,5 +1,9 @@
 let launches = {
 
+    data: {
+        allItems: []
+    },
+
     initialize: function() {
         axios
             .get('https://api.spacexdata.com/v4/launches')
@@ -15,36 +19,10 @@ let launches = {
     },
 
     onAxiosFinished: function(response) {
-        let launchData = response.data;
-        // TODO stuff here
 
-        // build table
-        for (let i = launchData.length - 1; i >= 0; i--) {
+        launches.data.allItems = response.data;
 
-            let container = document.querySelector('div.firstModal table > tbody');
-    
-            let row = document.createElement('tr');
-    
-            let flightNo = document.createElement('td');
-            let name = document.createElement('td');
-            let date = document.createElement('td');
-            let noOfCores = document.createElement('td');
-            let noOfCrew = document.createElement('td');
-    
-            row.appendChild(flightNo);
-            row.appendChild(name);
-            row.appendChild(date);
-            row.appendChild(noOfCores);
-            row.appendChild(noOfCrew);
-    
-            flightNo.innerHTML = launchData[i].flight_number;
-            name.innerHTML = launchData[i].name;
-            date.innerHTML = moment(launchData[i].date_unix * 1000).format('LL');
-            noOfCores.innerHTML = launchData[i].cores.length;
-            noOfCrew.innerHTML = launchData[i].crew.length;
-    
-            container.appendChild(row);
-        }
+        launches.renderTable();
     },
 
     onAxiosError: function(error) {
@@ -53,3 +31,12 @@ let launches = {
 };
 
 launches.initialize();
+
+
+
+let o1 = {
+    p1: function() {},
+    p2: 'test'
+};
+
+o1.p3 = function() {}
