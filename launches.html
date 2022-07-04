@@ -5,8 +5,11 @@
         <link rel="stylesheet" href="main.css">
 
         <script defer src="3rd-party/axios.min.js"></script>
+        <script defer src="3rd-party/moment.min.js"></script>
+
         <script defer src="utils/main.js"></script>
         <script defer src="utils/popupHandling.js"></script>
+
         <script defer src="launches/main.js"></script>
 
         <title>Hello World!</title>
@@ -32,14 +35,26 @@
             <div class="contentTile" data-modal-name="thirdModal"></div>
         </div>
         <div class="modal firstModal" tabindex="-1">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">First modal</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Flight No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">No of cores</th>
+                                    <th scope="col">No of crew</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
