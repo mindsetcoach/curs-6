@@ -1,4 +1,9 @@
 let crew = {
+
+    data: {
+        allItems: []
+    },
+
     initialize: function() {
 
         axios
@@ -15,8 +20,10 @@ let crew = {
     },
 
     onAxiosFinished: function(response) {
-        let launchData = response.data;
-        // TODO stuff here
+
+        crew.data.allItems = response.data;
+
+        crew.renderTable();
     },
 };
 

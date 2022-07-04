@@ -1,8 +1,8 @@
 launches.renderTable = function() {
 
-    let launchItems = launches.data.allItems;
+    let items = launches.data.allItems;
 
-    for (let i = launchItems.length - 1; i >= 0; i--) {
+    for (let i = items.length - 1; i >= 0; i--) {
 
         let container = document.querySelector('div.firstModal table > tbody');
 
@@ -20,11 +20,11 @@ launches.renderTable = function() {
         row.appendChild(noOfCores);
         row.appendChild(noOfCrew);
 
-        flightNo.innerHTML = launchItems[i].flight_number;
-        name.innerHTML = launchItems[i].name;
-        date.innerHTML = moment(launchItems[i].date_unix * 1000).format('LL');
-        noOfCores.innerHTML = launchItems[i].cores.length;
-        noOfCrew.innerHTML = launchItems[i].crew.length;
+        flightNo.innerHTML = items[i].flight_number;
+        name.innerHTML = items[i].name;
+        date.innerHTML = moment(items[i].date_unix * 1000).format('LL');
+        noOfCores.innerHTML = items[i].cores.length;
+        noOfCrew.innerHTML = items[i].crew.length;
 
         container.appendChild(row);
     }

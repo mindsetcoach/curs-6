@@ -5,9 +5,12 @@
         <link rel="stylesheet" href="main.css">
 
         <script defer src="3rd-party/axios.min.js"></script>
+
         <script defer src="utils/main.js"></script>
         <script defer src="utils/popupHandling.js"></script>
+
         <script defer src="crew/main.js"></script>
+        <script defer src="crew/allCrew.js"></script>
 
         <title>Hello World!</title>
     </head>
@@ -33,14 +36,24 @@
             <div class="contentTile" data-modal-name="fourthModal"></div>
         </div>
         <div class="modal firstModal" tabindex="-1">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal 1</h5>
+                        <h5 class="modal-title">All crew members</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Agency</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
