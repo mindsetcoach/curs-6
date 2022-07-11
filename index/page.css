@@ -2,6 +2,19 @@
     background-image: url('../images/spacex-home-small.jpeg');
 }
 
+.social-media-icon > img {
+    width: 30px;
+    height: 30px;
+}
+
+.section-primary {
+    padding: 10px 20px 10px 20px;
+}
+
+.section-first {
+    max-width: 300px;
+}
+
 .companyInfo {
     display: flex;
     justify-content: space-between;
