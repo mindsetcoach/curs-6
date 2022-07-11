@@ -2,12 +2,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="3rd-party/bootstrap.min.css">
+
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="index/page.css">
 
         <script defer src="3rd-party/axios.min.js"></script>
+
         <script defer src="utils/main.js"></script>
         <script defer src="index/main.js"></script>
+        <script defer src="index/companyInfo.js"></script>
 
         <title>Page 1</title>
     </head>
@@ -27,7 +30,45 @@
             </ul>
         </div>
         <div class="content">
-            <div class="companyInfo"></div>
+            <div class="companyInfo">
+                <div class="section section-primary section-description">
+                    <h5>Description</h5>
+                    <p></p>
+                </div>
+                <div class="section section-primary section-statistics">
+                    <h5>Statistics</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">employees</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">vehicles</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">launch_sites</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">valuation</th>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section section-primary">
+                    <div class="section section-secondary section-address">
+                        <h5>Address</h5>
+                        <p></p>
+                    </div>
+                    <div class="section section-secondary section-social-media">
+                        <h5>Social media</h5>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
             <div class="companyMap"></div>
         </div>
     </body>

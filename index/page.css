@@ -3,8 +3,8 @@
 }
 
 .companyInfo {
-    height: 250px;
-    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
 }
 
 .companyMap {
