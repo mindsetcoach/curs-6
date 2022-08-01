@@ -20,6 +20,17 @@
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .section-first {
+        max-width: none;
+    }
+
+    .companyInfo {
+        flex-direction: column;
+    }
+}
+
 .companyMap {
     height: 200px;
     background-color: lightcoral;
