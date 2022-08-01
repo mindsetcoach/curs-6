@@ -2,15 +2,18 @@
 <html>
     <head>
         <link rel="stylesheet" href="3rd-party/bootstrap.min.css">
+        <link rel="stylesheet" href="3rd-party/leaflet.css">
 
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="index/page.css">
 
         <script defer src="3rd-party/axios.min.js"></script>
+        <script defer src="3rd-party/leaflet.js"></script>
 
         <script defer src="utils/main.js"></script>
         <script defer src="index/main.js"></script>
         <script defer src="index/companyInfo.js"></script>
+        <script defer src="index/companyMap.js"></script>
 
         <title>Page 1</title>
     </head>
@@ -76,7 +79,9 @@
                     </div>
                 </div>
             </div>
-            <div class="companyMap"></div>
+            <div class="companyMap">
+                <div id="map"></div>
+            </div>
         </div>
     </body>
 </html>

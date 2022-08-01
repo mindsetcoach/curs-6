@@ -32,6 +32,8 @@
 }
 
 .companyMap {
+}
+
+#map {
     height: 200px;
-    background-color: lightcoral;
 }
