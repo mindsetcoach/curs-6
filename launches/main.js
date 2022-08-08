@@ -23,6 +23,7 @@ let launches = {
         launches.data.allItems = response.data;
 
         launches.renderTable();
+        launches.renderChart();
     },
 
     onAxiosError: function(error) {
@@ -31,12 +32,3 @@ let launches = {
 };
 
 launches.initialize();
-
-
-
-let o1 = {
-    p1: function() {},
-    p2: 'test'
-};
-
-o1.p3 = function() {}
