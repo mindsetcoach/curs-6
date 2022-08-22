@@ -40,7 +40,7 @@ crew.gallery = {
     },
 
     onItemClicked: function() {
-        alert('item test')
+        crew.carousel.init();
     },
 
     onSortButtonClicked: function() {

@@ -26,4 +26,14 @@ let popupHandling = {
         let popup = document.querySelector('.' + modalName);
         popup.style.display = 'block';
     },
+
+    showSpecificModal: function(modalClass) {
+        let modal = document.querySelector(modalClass);
+        modal.style.display = 'block';
+    },
+
+    hideSpecificModal: function(modalClass) {
+        let modal = document.querySelector(modalClass);
+        modal.style.display = 'none';
+    },
 }

@@ -34,3 +34,7 @@ div.si-crewGallery .modal-body {
     display: flex;
     justify-content: center;
 }
+
+div.si-crewCarousel .modal-content {
+    height: 100%;
+}
