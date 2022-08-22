@@ -24,6 +24,7 @@ let crew = {
         crew.data.allItems = response.data;
 
         crew.renderTable();
+        crew.gallery.render();
     },
 };
 
