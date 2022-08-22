@@ -1,7 +1,9 @@
 let crew = {
 
     data: {
-        allItems: []
+        allItems: [],
+        allItemsSorted: null,
+        isGallerySorted: false
     },
 
     initialize: function() {
@@ -24,7 +26,7 @@ let crew = {
         crew.data.allItems = response.data;
 
         crew.renderTable();
-        crew.gallery.render();
+        crew.gallery.init();
     },
 };
 

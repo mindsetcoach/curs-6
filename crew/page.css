@@ -14,6 +14,7 @@ div.si-crewGallery .modal-body {
     background-color: black;
     margin: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 .si-galleryItemImage {
