@@ -3,7 +3,8 @@ let crew = {
     data: {
         allItems: [],
         allItemsSorted: null,
-        isGallerySorted: false
+        isGallerySorted: false,
+        selectedCrewMemberId: null
     },
 
     initialize: function() {
