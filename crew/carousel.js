@@ -35,7 +35,13 @@ crew.carousel = {
     },
 
     onPrevButtonClicked: function() {
-        let allCrew = crew.data.allItems;
+        let allCrew = null;
+        if (crew.data.isGallerySorted) {
+            allCrew = crew.data.allItemsSorted;
+        } else {
+            allCrew = crew.data.allItems;
+        }
+
         let crewMemberId = crew.data.selectedCrewMemberId;
         let prevCrewMemberResult = listSearch.getNeighborItemById(
             allCrew,
@@ -54,7 +60,13 @@ crew.carousel = {
         }
     },
     onNextButtonClicked: function() {
-        let allCrew = crew.data.allItems;
+        let allCrew = null;
+        if (crew.data.isGallerySorted) {
+            allCrew = crew.data.allItemsSorted;
+        } else {
+            allCrew = crew.data.allItems;
+        }
+
         let crewMemberId = crew.data.selectedCrewMemberId;
         let nextCrewMemberResult = listSearch.getNeighborItemById(
             allCrew,
