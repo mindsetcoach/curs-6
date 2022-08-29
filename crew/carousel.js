@@ -23,6 +23,15 @@ crew.carousel = {
         let containerDiv = document.querySelector('div.si-crewCarousel .modal-body > div');
         containerDiv.style.backgroundImage = 'url("' + selectedCrewMember.image + '")';
 
+        let overlayName = document.querySelector('div.si-crewCarousel .si-overlayName > span');
+        let overlayAgency = document.querySelector('div.si-crewCarousel .si-overlayAgency > span');
+        let overlayStatus = document.querySelector('div.si-crewCarousel .si-overlayStatus > span');
+
+        overlayName.innerHTML = selectedCrewMember.name;
+        overlayName.title = selectedCrewMember.name;
+        overlayAgency.innerHTML = selectedCrewMember.agency;
+        overlayStatus.innerHTML = selectedCrewMember.status;
+
     },
 
     onPrevButtonClicked: function() {

@@ -40,9 +40,31 @@ div.si-crewCarousel .modal-content {
 }
 
 .si-carouselCore {
+    position: relative;
     background-color: black;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.si-carouselOverlay {
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 120px;
+    cursor: default;
+}
+
+.si-overlayItem {
+    font-size: smaller;
+}
+.si-overlayItem > span {
+    float: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 110px;
 }
