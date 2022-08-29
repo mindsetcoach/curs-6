@@ -22,6 +22,7 @@ crew.gallery = {
 
             let divElement = document.createElement('div');
             divElement.classList.add('si-galleryItem');
+            divElement.setAttribute('data-id', crewList[i].id);
             divElement.addEventListener('click', crew.gallery.onItemClicked);
 
             let imageElement = document.createElement('img');
@@ -39,8 +40,9 @@ crew.gallery = {
         }
     },
 
-    onItemClicked: function() {
-        crew.carousel.init();
+    onItemClicked: function(event) {
+        let crewMemberId = event.currentTarget.dataset.id;
+        crew.carousel.init(crewMemberId);
     },
 
     onSortButtonClicked: function() {
