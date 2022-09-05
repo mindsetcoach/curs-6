@@ -15,6 +15,7 @@
         <script defer src="launches/main.js"></script>
         <script defer src="launches/allLaunches.js"></script>
         <script defer src="launches/launchesPerMonth.js"></script>
+        <script defer src="launches/calendar.js"></script>
 
         <title>Hello World!</title>
     </head>
@@ -46,7 +47,7 @@
                   <p class="card-text">See a nice chart showing how many launches were historically performed in each calendar month.</p>
                 </div>
             </div>
-            <div class="contentTile card" data-modal-name="thirdModal">
+            <div class="contentTile card" data-modal-name="si-calendarModal">
                 <div class="card-body">
                   <h5 class="card-title">SpaceX launches calendar</h5>
                   <p class="card-text">See a monthly calendar, having the days with a SpaceX launch marked.</p>
@@ -91,15 +92,25 @@
                 </div>
             </div>
         </div>
-        <div class="modal thirdModal" tabindex="-1">
+        <div class="modal si-calendarModal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Third modal</h5>
+                        <h5 class="modal-title">SpaceX Launches Calendar</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <div class="si-calendarCore">
+                            <div class="si-day">1</div>
+                            <div class="si-day">2</div>
+                            <div class="si-day">3</div>
+                            <div class="si-day">4</div>
+                            <div class="si-day">5</div>
+                            <div class="si-day">6</div>
+                            <div class="si-day">7</div>
+                            <div class="si-day">8</div>
+                            <div class="si-day">9</div>
+                        </div>
                     </div>
                 </div>
             </div>

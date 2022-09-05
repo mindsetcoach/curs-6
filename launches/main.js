@@ -1,7 +1,11 @@
 let launches = {
 
     data: {
-        allItems: []
+        allItems: [],
+        calendarPage: {
+            year: null,
+            month: null
+        } 
     },
 
     initialize: function() {
@@ -24,6 +28,7 @@ let launches = {
 
         launches.renderTable();
         launches.renderChart();
+        launches.calendar.init();
     },
 
     onAxiosError: function(error) {

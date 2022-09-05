@@ -37,23 +37,23 @@ index.companyMap = {
                 ;
             }
         }
-        if (type === 'landpads') {
-            let landpadsData = index.data.landpadsData;
-            for (let i = 0; i < landpadsData.length; i++) {
-                L
-                    .circle(
-                        [landpadsData[i].latitude, landpadsData[i].longitude],
-                        {
-                            color: 'red',
-                            fillColor: '#f03',
-                            fillOpacity: 0,
-                            radius: 200000
-                        }
-                    )
-                    .addTo(index.companyMap.map)
-                ;
-            }
-        }
+        // if (type === 'landpads') {
+        //     let landpadsData = index.data.landpadsData;
+        //     for (let i = 0; i < landpadsData.length; i++) {
+        //         L
+        //             .circle(
+        //                 [landpadsData[i].latitude, landpadsData[i].longitude],
+        //                 {
+        //                     color: 'red',
+        //                     fillColor: '#f03',
+        //                     fillOpacity: 0,
+        //                     radius: 200000
+        //                 }
+        //             )
+        //             .addTo(index.companyMap.map)
+        //         ;
+        //     }
+        // }
 
     }
 
