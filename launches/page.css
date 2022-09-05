@@ -33,3 +33,9 @@
 .si-calendarModal .si-day.si-borderedDay {
     border: 1px solid;
 }
+
+.si-calendarModal .si-launchDay {
+    background-color: #6c757d;
+    color: white;
+    font-weight: bolder;
+}
