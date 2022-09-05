@@ -2,20 +2,34 @@
     background-image: url('../images/spacex-launches-small.jpeg');
 }
 
+.si-calendarModal .si-calendarHead,
 .si-calendarModal .si-calendarCore {
     width: 350px;
     display: flex;
-    flex-wrap: wrap;
     margin: auto;
 }
 
+.si-calendarModal .si-calendarCore {
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.si-calendarModal .si-headCell {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
 .si-calendarModal .si-day {
     width: 48px;
     height: 48px;
-    border: 1px solid;
     margin: 1px;
     padding: 5px;
     display: flex;
     justify-content: right;
     align-items: flex-end;
+}
+
+.si-calendarModal .si-day.si-borderedDay {
+    border: 1px solid;
 }
